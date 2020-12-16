@@ -1,0 +1,34 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "descripcion": "lavar platos",
+      "hecho": false
+    },
+    {
+      "id": 6,
+      "descripcion": "pasear mascota",
+      "hecho": true
+    },
+    {
+      "id": 662479850,
+      "descripcion": "lavar carro",
+      "hecho": true
+    },
+    {
+      "id": 8868890454,
+      "descripcion": "barrer sala",
+      "hecho": false
+    },
+    {
+      "id": 4550954532,
+      "descripcion": "hacer proyecto",
+      "hecho": false
+    },
+    {
+      "id": 1312633408,
+      "descripcion": "pagar luz agua internet gas",
+      "hecho": false
+    }
+  ]
+}

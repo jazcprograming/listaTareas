@@ -1,0 +1,25 @@
+<form class="text-center" style="margin-left: 100px;margin-top: 100px; width: 300px;">
+    <mat-card #de  [(ngModel)]="des"  name="desccc" ngDefaultControl><h1><small>Estamos editando la tarea:</small> "{{des}}"</h1></mat-card>
+    <div style="margin-top: 20px;">
+        <mat-form-field class="example-full-width">
+            <mat-label>Descripción</mat-label>
+            <input matInput placeholder="descripción de la tarea" #desc [(ngModel)]="inppp" value="{{inppp}}" name="descrip" required>
+        </mat-form-field>
+    </div>
+    <div>
+        <label *ngIf="inppp.length<=0">Debe ingresar alguna descripción de tarea</label>
+    </div>
+    <div>
+    <mat-slide-toggle style="margin-top: 20px;" ng-model="checkeado" #checkk [(ngModel)]="checkeado" checked="{{checkeado}}" name="chee">
+        <label *ngIf="checkeado">Tarea Completada</label>
+        <label *ngIf="!checkeado">Tarea Incompleta</label>
+    </mat-slide-toggle>
+    </div>
+    <div style="margin-top: 20px;">
+        <button mat-raised-button color="primary" (click)="confirmar()">Confirmar</button>
+        <button mat-raised-button color="link" routerLink="/lista">Volver</button>
+        <button mat-raised-button color="warn" (click)="eliminar()">Eliminar</button>
+    </div>
+
+</form>
+

@@ -1,0 +1,9 @@
+<div class="text-center">
+    <app-add (update)="obtenerTareas()"></app-add>
+</div>
+
+<div>
+    <app-lista [tareas]="tareas" (eliminarTarea)="eliminarTarea($event)"
+    (actualizarTarea)="actualizarTarea($event)"
+    ></app-lista>
+</div>

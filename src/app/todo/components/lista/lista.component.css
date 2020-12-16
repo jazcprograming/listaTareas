@@ -1,0 +1,13 @@
+.lista {
+    text-align: center;
+    max-width: 600px;
+}
+
+.mat-raised-button {
+    padding: 0px;
+    height: 30px;
+}
+
+.elemento {
+    position: relative;
+}
